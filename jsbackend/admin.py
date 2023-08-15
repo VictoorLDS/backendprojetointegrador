@@ -1,9 +1,12 @@
 from django.contrib import admin
 
-from .models import Categoria, Fornecedor, Movel, Tipo_Usuario, Usuario
+from jsbackend.models import Categoria, Compra, Fornecedor, ItensCompra, Movel, Tipo_Usuario, Usuario
 
 admin.site.register(Categoria)
+admin.site.register(Compra)
 admin.site.register(Fornecedor)
+admin.site.register(ItensCompra)
 admin.site.register(Movel)
 admin.site.register(Tipo_Usuario)
 admin.site.register(Usuario)
+
