@@ -1,7 +1,6 @@
-from .categoria import Categoria
-from .fornecedor import Fornecedor
-from .movel import Movel
-from .tipousuario import Tipo_Usuario
-from .usuario import Usuario
-from .compra import Compra
-from .compra import ItensCompra
+from .categoria import CategoriaSerializer
+from .fornecedor import FornecedorSerializer
+from .movel import MovelSerializer
+from .tipousuario import Tipo_UsuarioSerializer
+from .usuario import UsuarioSerializer
+from .compra import CompraSerializer, ItensCompraSerializer

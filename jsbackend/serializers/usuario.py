@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from jsbackend/models/usuario import Usuario
+from jsbackend.models import Usuario
 
 class UsuarioSerializer(ModelSerializer):
     class Meta:
