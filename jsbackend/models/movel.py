@@ -12,6 +12,6 @@ class Movel(models.Model):
     def __str__(self):
         return f"{self.titulo} ({self.preco})"
 
-        class Meta:
-            verbose_name = "Móvel"
-            verbose_name_plural = "Móveis"
+    class Meta:
+        verbose_name = "Móvel"
+        verbose_name_plural = "Móveis"
