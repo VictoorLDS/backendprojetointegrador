@@ -5,7 +5,7 @@ class Fornecedor(models.Model):
     email = models.EmailField(max_length=50)
 
     def __str__(self):
-        return self.descricao
+        return self.nome
             
     class Meta:
         verbose_name = "Fornecedor"

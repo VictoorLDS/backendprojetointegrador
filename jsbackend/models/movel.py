@@ -20,7 +20,7 @@ class Movel(models.Model):
     )
 
     def __str__(self):
-        return f"{self.titulo} ({self.preco})"
+        return f"{self.nome} ({self.preco})"
 
     class Meta:
         verbose_name = "Móvel"
