@@ -6,7 +6,7 @@ authors = [
     {name = "VictoorLDS", email = "vlds221005@gmail.com"},
 ]
 dependencies = [
-    "django>=4.2.4",
+    "django>=4.2.5",
     "djangorestframework>=3.14.0",
     "python-magic>=0.4.27",
     "Pillow>=10.0.0",
@@ -15,6 +15,12 @@ dependencies = [
     "pydotplus>=2.0.2",
     "drf-spectacular>=0.26.4",
     "python-dotenv>=1.0.0",
+    "gunicorn>=21.2.0",
+    "whitenoise[brotli]>=6.5.0",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
+
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+without-hashes = "true"
