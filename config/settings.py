@@ -127,7 +127,7 @@ REST_FRAMEWORK = {
 }
 SPECTACULAR_SETTINGS = {
     "TITLE": "JS Móveis API",
-    "DESCRIPTION": "API para gerenciamento de livraria, incluindo endpoints e documentação.",
+    "DESCRIPTION": "API para gerenciamento de loja de móveis, incluindo endpoints e documentação.",
     "VERSION": "1.0.0",
 }
 
