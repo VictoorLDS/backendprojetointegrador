@@ -11,10 +11,8 @@ from drf_spectacular.views import (
 )
 
 from uploader.router import router as uploader_router
-from rest_framework_simplejwt.views import (
-    TokenObtainPairView,
-    TokenRefreshView,
-)
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+
 
 from rest_framework.routers import DefaultRouter
 
@@ -31,8 +29,8 @@ router.register(r"usuarios", UsuarioViewSet)
 urlpatterns = [
     path("api/", include(router.urls)),
     path("api/media/", include(uploader_router.urls)),
-    path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
-    path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
+    path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path("/api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
     path("admin/", admin.site.urls),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path(
